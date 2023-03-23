@@ -27,4 +27,5 @@ int main(){
   f += 1; 
   f.getc();
   cout << f<<endl; 
+  qse<f
 }
