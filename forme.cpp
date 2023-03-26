@@ -5,8 +5,8 @@ using namespace std;
 #include "Point.h"
 
 int forme::getc(){
-  cout << "les valeurs du point sont en x : " << c.getx()<< " et en y : "<<c.gety() <<endl; 
-  return 0 ;
+  cout << "les valeurs du point sont en x : " << c.getx()<< " et en y : "<<c.gety() <<endl;
+  return 0; 
 }
 float forme::getp(){
   return p ;
@@ -38,7 +38,9 @@ forme::~forme(){
 // surcharge de <<
 ostream& operator<<(ostream& os, forme& f)
 {
-    os << "Pour le centre "<< f.getc() << " Le perimetre vaut : " << f.getp()<< " et la surface vaut : " << f.gets() <<  endl;
+    os << "Pour le centre ";
+    f.getc() ;
+    os<< " Le perimetre vaut : " << f.getp()<< " et la surface vaut : " << f.gets() <<  endl;
     return os;
 }
 
